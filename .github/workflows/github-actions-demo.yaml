@@ -9,6 +9,17 @@ on:
       email:
         type: string
         required: true
+
+  workflow_dispatch:
+     inputs:
+       username:
+        description: "Rapyuta.io User Name"
+        type: string
+        required: true
+       email:
+        description: "Rapyuta.io User Email"
+        type: string
+        required: true
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
